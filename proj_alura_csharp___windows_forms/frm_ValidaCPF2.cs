@@ -33,6 +33,11 @@ namespace proj_alura_csharp___windows_forms
                 MessageBox.Show("Você deve digitar um cpf", "Mensagem de validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
+            if (vConteudo.Length != 11)
+            {
+                MessageBox.Show("Você deve digitar 11 números para o cpf", "Mensagem de validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
             if (MessageBox.Show("Você deseja relamente validar o cpf?", "Mensagem de validação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 bool validaCpf = false;
