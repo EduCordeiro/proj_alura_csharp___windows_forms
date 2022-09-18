@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cls_Uteis.cs" />
     <Compile Include="frm_DemonstracaoKey.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ValidaCPF.resx">
       <DependentUpon>frm_ValidaCPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ValidaCPF2.resx">
+      <DependentUpon>frm_ValidaCPF2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ValidaSenha.resx">
       <DependentUpon>frm_ValidaSenha.cs</DependentUpon>
