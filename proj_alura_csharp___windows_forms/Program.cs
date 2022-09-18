@@ -16,7 +16,7 @@ namespace proj_alura_csharp___windows_forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_ValidaCPF());
+            Application.Run(new frm_ValidaCPF2());
         }
     }
 }

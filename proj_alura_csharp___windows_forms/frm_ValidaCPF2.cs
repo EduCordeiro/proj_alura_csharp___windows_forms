@@ -16,5 +16,27 @@ namespace proj_alura_csharp___windows_forms
         {
             InitializeComponent();
         }
+
+        private void Btn_Reset_Click(object sender, EventArgs e)
+        {            
+            Msk_CPF.Text = "";
+        }
+
+        private void Btn_Valida_Click(object sender, EventArgs e)
+        {
+            bool validaCpf = false;
+
+            validaCpf = cls_Uteis.Valida(Msk_CPF.Text);
+
+            if (validaCpf == true)
+            {
+                MessageBox.Show("Cpf válido", "Mensagem de validação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Cpf inválido", "Mensagem de validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }
