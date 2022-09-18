@@ -25,6 +25,14 @@ namespace proj_alura_csharp___windows_forms
         private void Btn_Valida_Click(object sender, EventArgs e)
         {
 
+            string vConteudo = Msk_CPF.Text;
+            vConteudo = vConteudo.Replace(".", "").Replace("-", "").Trim();
+
+            if(vConteudo == "")
+            {
+                MessageBox.Show("Você deve digitar um cpf", "Mensagem de validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
             if (MessageBox.Show("Você deseja relamente validar o cpf?", "Mensagem de validação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 bool validaCpf = false;
