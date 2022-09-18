@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proj_alura_csharp___windows_forms
 {
-    public partial class HelloWorld : Form
+    public partial class frm_HelloWorld : Form
     {
-        public HelloWorld()
+        public frm_HelloWorld()
         {
             InitializeComponent();
         }

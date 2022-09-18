@@ -1,6 +1,6 @@
 ﻿namespace proj_alura_csharp___windows_forms
 {
-    partial class HelloWorld
+    partial class frm_HelloWorld
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,21 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lbl_Titulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // HelloWorld
+            // lbl_Titulo
+            // 
+            this.lbl_Titulo.AutoSize = true;
+            this.lbl_Titulo.Location = new System.Drawing.Point(12, 13);
+            this.lbl_Titulo.Name = "lbl_Titulo";
+            this.lbl_Titulo.Size = new System.Drawing.Size(134, 13);
+            this.lbl_Titulo.TabIndex = 0;
+            this.lbl_Titulo.Text = "Visual Studio .NET Version";
+            // 
+            // frm_HelloWorld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "HelloWorld";
+            this.ClientSize = new System.Drawing.Size(629, 424);
+            this.Controls.Add(this.lbl_Titulo);
+            this.Name = "frm_HelloWorld";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hello World";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lbl_Titulo;
     }
 }
 
