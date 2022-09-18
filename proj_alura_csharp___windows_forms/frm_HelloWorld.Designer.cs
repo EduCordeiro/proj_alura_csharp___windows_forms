@@ -31,6 +31,7 @@
             this.lbl_Titulo = new System.Windows.Forms.Label();
             this.btn_Sair = new System.Windows.Forms.Button();
             this.btn_ModificaLabel = new System.Windows.Forms.Button();
+            this.txt_ConteudoLabel = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_Titulo
@@ -54,7 +55,7 @@
             // 
             // btn_ModificaLabel
             // 
-            this.btn_ModificaLabel.Location = new System.Drawing.Point(120, 88);
+            this.btn_ModificaLabel.Location = new System.Drawing.Point(12, 29);
             this.btn_ModificaLabel.Name = "btn_ModificaLabel";
             this.btn_ModificaLabel.Size = new System.Drawing.Size(175, 23);
             this.btn_ModificaLabel.TabIndex = 2;
@@ -62,11 +63,19 @@
             this.btn_ModificaLabel.UseVisualStyleBackColor = true;
             this.btn_ModificaLabel.Click += new System.EventHandler(this.btn_ModificaLabel_Click);
             // 
+            // txt_ConteudoLabel
+            // 
+            this.txt_ConteudoLabel.Location = new System.Drawing.Point(15, 58);
+            this.txt_ConteudoLabel.Name = "txt_ConteudoLabel";
+            this.txt_ConteudoLabel.Size = new System.Drawing.Size(379, 20);
+            this.txt_ConteudoLabel.TabIndex = 3;
+            // 
             // frm_HelloWorld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 229);
+            this.Controls.Add(this.txt_ConteudoLabel);
             this.Controls.Add(this.btn_ModificaLabel);
             this.Controls.Add(this.btn_Sair);
             this.Controls.Add(this.lbl_Titulo);
@@ -83,6 +92,7 @@
         private System.Windows.Forms.Label lbl_Titulo;
         private System.Windows.Forms.Button btn_Sair;
         private System.Windows.Forms.Button btn_ModificaLabel;
+        private System.Windows.Forms.TextBox txt_ConteudoLabel;
     }
 }
 
