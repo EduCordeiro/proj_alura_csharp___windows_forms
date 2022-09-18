@@ -24,17 +24,21 @@ namespace proj_alura_csharp___windows_forms
 
         private void Btn_Valida_Click(object sender, EventArgs e)
         {
-            bool validaCpf = false;
 
-            validaCpf = cls_Uteis.Valida(Msk_CPF.Text);
+            if (MessageBox.Show("Você deseja relamente validar o cpf?", "Mensagem de validação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                bool validaCpf = false;
 
-            if (validaCpf == true)
-            {
-                MessageBox.Show("Cpf válido", "Mensagem de validação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Cpf inválido", "Mensagem de validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                validaCpf = cls_Uteis.Valida(Msk_CPF.Text);
+
+                if (validaCpf == true)
+                {
+                    MessageBox.Show("Cpf válido", "Mensagem de validação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Cpf inválido", "Mensagem de validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
