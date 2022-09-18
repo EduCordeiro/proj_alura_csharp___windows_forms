@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proj_alura_csharp___windows_forms
 {
-    public partial class Frm_ValidaCPF : Form
+    public partial class frm_ValidaCPF : Form
     {
-        public Frm_ValidaCPF()
+        public frm_ValidaCPF()
         {
             InitializeComponent();
         }

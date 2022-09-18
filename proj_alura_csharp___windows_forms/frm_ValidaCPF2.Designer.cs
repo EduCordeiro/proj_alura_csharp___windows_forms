@@ -1,6 +1,6 @@
 ﻿namespace proj_alura_csharp___windows_forms
 {
-    partial class frm_ValidaCPF
+    partial class frm_ValidaCPF2
     {
         /// <summary>
         /// Required designer variable.
@@ -59,7 +59,7 @@
             this.Btn_Reset.TabIndex = 2;
             this.Btn_Reset.Text = "Limpa";
             this.Btn_Reset.UseVisualStyleBackColor = true;
-            this.Btn_Reset.Click += new System.EventHandler(this.Btn_Reset_Click);
+            
             // 
             // Btn_Valida
             // 
@@ -68,8 +68,7 @@
             this.Btn_Valida.Size = new System.Drawing.Size(111, 23);
             this.Btn_Valida.TabIndex = 3;
             this.Btn_Valida.Text = "Valída";
-            this.Btn_Valida.UseVisualStyleBackColor = true;
-            this.Btn_Valida.Click += new System.EventHandler(this.Btn_Valida_Click);
+            this.Btn_Valida.UseVisualStyleBackColor = true;            
             // 
             // Frm_ValidaCPF
             // 
@@ -80,7 +79,7 @@
             this.Controls.Add(this.Btn_Reset);
             this.Controls.Add(this.Lbl_Resultado);
             this.Controls.Add(this.Msk_CPF);
-            this.Name = "Frm_ValidaCPF";
+            this.Name = "frm_validaCPF2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Validação CPF";
             this.ResumeLayout(false);
