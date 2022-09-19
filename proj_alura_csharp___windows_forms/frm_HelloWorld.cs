@@ -20,7 +20,7 @@ namespace proj_alura_csharp___windows_forms
 
         private void btn_Sair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void btn_ModificaLabel_Click(object sender, EventArgs e)
